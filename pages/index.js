@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Test from "./Test";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
+import Experience from "./experience";
+import Projects from "./projects";
+import Education from "./education";
+import Skills from "./skills";
+import Contact from "./contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,29 +16,15 @@ export default function Home() {
           <h1>Hello Next World!</h1>
           <p className={styles.description}>Get started by editing </p>
           <h2>Learn</h2>
-          <ul>
-            <li>
-              <a href="https://nextjs.org/docs">Documentation</a>
-            </li>
-            <li>
-              <a href="https://nextjs.org/learn">Learn Next.js</a>
-            </li>
-          </ul>
-          <h2>Examples</h2>
-          <ul>
-            <li>
-              <a href="https://nextjs.org/docs">Documentation</a>
-            </li>
-            <li>
-              <a href="https://nextjs.org/learn">Learn Next.js</a>
-            </li>
-          </ul>
+          <ul></ul>
         </div>
-        <Test />
-        <Page2 />
-        <Page3 />
+        <Experience />
+        <Education />
+        <Projects />
+
+        <Skills />
+        <Contact />
       </main>
-    </> 
-  ); 
+    </>
+  );
 }
- 
